@@ -102,6 +102,10 @@ PRODUCT_SYSTEM_SERVER_JARS := \
     ethernet-service \
     wifi-service
 
+PRODUCT_PACKAGES += \
+    libwebviewchromium_plat_support \
+    libwebviewchromium_loader
+
 PRODUCT_RUNTIMES := runtime_libart_default
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

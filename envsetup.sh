@@ -230,6 +230,9 @@ function setpaths()
     unset ANDROID_HOST_OUT
     export ANDROID_HOST_OUT=$(get_abs_build_var HOST_OUT)
 
+    # Add ccache to PATH for use in kernel
+    export PATH=$PATH:$T/prebuilts/misc/linux-x86/ccache
+
     # needed for building linux on MacOS
     # TODO: fix the path
     #export HOST_EXTRACFLAGS="-I "$T/system/kernel_headers/host_include
